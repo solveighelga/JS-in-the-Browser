@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">    
+    <title>Sign up form</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form role="sign in form" id="form">
+                <h1>Vefskólinn Newsletter</h1>
+                <h2>Sign up</h2>
+                <!--Comment on input fields: -->
+                <div class="input-control">
+                    <label for="firstname">First name</label>
+                    <input id="firstName" type="text" name="firstname" aria-label="This is a mandatory field please fill out your first name">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="lastname">Last name</label>
+                    <input id="lastName" type="text" name="lastname" aria-label="This is a mandatory field please fill out your last name">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" name="email" aria-label="This is a mandatory field please fill out your email">
+                    <div class="error"></div>
+                </div>
+                <div class="comment">
+                    <label for="comment">Comment</label>
+                    <input id="comment" type="text" name="comment" aria-label="It is optional to leave a comment">
+                </div>
+                <br>
+                <button id="submitBtn" type="submit">Submit</button>
+                <!--Comment on popup: -->
+                <div class="popup" id="popup">
+                    <img src="tick.png">
+                    <h2>Thank you!</h2>
+                    <p>Your details have been successfully submitted.</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

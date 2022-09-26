@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family:'Poppins', sans-serif;
+  }
+  nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 8vh;
+    background-color: lightblue;
+}
+
+.nav-links {
+    display:flex;
+    width: 20%;
+}
+
+.nav-links a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    font: weight 300px;;
+    font-size: 14px;
+    color: black;
+    margin-left: 30px;
+}
+
+.nav-links a:hover{
+    font-weight: 600;
+    padding: 5px;
+    border-bottom: solid black;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+main {
+    list-style: none; 
+    padding-top: 50px;
+    padding-bottom: 10%;
+  }
+
+.container{
+    margin: auto;
+    width: 500px;
+    max-width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.3);
+    text-align: center;
+}
+
+.container form{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.container form h1{
+    text-align: center;
+    margin-bottom: 24px;
+    color: #222;
+    font-weight: 400;
+}
+
+.input-control
+{
+    text-align: left;
+    margin: 2px 0 18px 0;
+}
+
+.input-control input{
+    width:100%;
+    height: 40px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid silver;
+    padding: 0 10px;
+}
+
+.comment
+{
+    text-align: left;
+}
+
+.comment input{
+    width:100%;
+    height: 40px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid silver;
+    padding: 0 10px;
+}
+
+button{
+    margin-left: 30%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 34px;
+    border-radius: black;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+}
+
+/* Success and error input that will show up in my Javascript */
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border: 1px solid #ff3860;
+    background-color: #ffdddd;
+}
+
+.input-control.error {
+    color:#ff3860;
+    font-size: 9px;
+}
+
+/* Here is my success screen styling that shows up when everything is filled out without errors */
+.popup{
+    width:400px;
+    background:#fff;
+    border-radius: 6px;
+    border:2px solid black;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align:center;
+    padding: 0 30px 30px;
+    color:#333;
+    visibility:hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+/* Code to make the popup visible */
+.open-popup{
+    top:50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility:visible;
+}
+
+.popup img{
+    width: 100px;
+    margin-top:-50px;
+    border-radius:50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2)
+}
